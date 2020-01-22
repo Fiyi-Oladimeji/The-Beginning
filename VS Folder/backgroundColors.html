@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>backgroundColors</title>
+        <!-- <script type="text/javascript">
+        //from backgroundColors
+        function makeBlue(){
+            document.body.style.backgroundColor="blue";
+        }//end changeColor
+        function makeGreen(){
+            document.body.style.backgroundColor="green";
+        }
+        </script> -->
+        <script type="text/javascript">
+        // from backgroundColors
+        function changeColor (color) {
+            document.body.style.backgroundColor=color;
+        } // end changeColor
+        </script>
+    </head>
+    <body>
+        <h1>Click a button to change the colour</h1>
+        <form action = "">
+            <fieldset>
+                <input type = "button"
+                value="blue"
+                onclick="changeColor('blue')"/>
+               <!-- the makeblue/makegreen style is a secondary style
+                onclick="makeBlue()"/>
+                onclick="document.body.style.backgroundColor = 'blue'"/> -->
+                <input type="button"
+                value="green"
+                onclick="changeColor('green')"/>
+                <!-- onclick="makeGreen()"/>
+                onclick="document.body.style.backgroundColor = 'gold'"/> -->
+            </fieldset>
+        </form>
+    </body>
+</html>
